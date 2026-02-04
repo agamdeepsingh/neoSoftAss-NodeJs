@@ -10,7 +10,7 @@ Node.js REST API for tasks (create, list with pagination, update, delete) with P
 
 I have added my **personal database credentials** in the `.env` file in this repo. You can:
 
-- **Use the same** – Run the app as-is; the existing `.env` points to my DB.
+- **Use the same** – Run the app as-is; the existing `.env` points to my DB (contains dummy data for testing).
 - **Use your own** – Edit `.env` and change `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `DB_SCHEMA`, and `DB_SSL` to your PostgreSQL details.
 
 No need to create a new `.env` unless you want to switch to your own database.
@@ -22,15 +22,15 @@ No need to create a new `.env` unless you want to switch to your own database.
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/agamdeepsingh/neoSoftAss-NodeJs
+cd neoSoftAss-NodeJs
 ```
 
 Replace `<repository-url>` with the repo URL and `<project-folder>` with the directory name (e.g. the repo name).
 
 ---
 
-### 2. Install dependencies
+### 2. Install dependencies (Recommended node version 18)
 
 ```bash
 npm install
@@ -123,8 +123,8 @@ curl -X DELETE http://localhost:3000/tasks/<task-id>
 ## Summary: clone → migrate → run
 
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/agamdeepsingh/neoSoftAss-NodeJs
+cd neoSoftAss-NodeJs
 npm install
 npm run db:migrate
 npm run dev
